@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const HomeView = props => {
+const HomeView = () => {
     return (
         <div>
             <h1>Hello Main</h1>
