@@ -1,71 +1,41 @@
-https://medium.com/geekculture/react-js-architecture-features-folder-structure-design-pattern-70b7b9103f22
-# Getting Started with Create React App
+# Classificados ITA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
 
-## Available Scripts
+No ITA, alunos querem vender ou deixar de graça produtos para outros bixos, principalmente iteanos que estão se formando. Isso acontece, pois é necessário trocar ou deixar coisas para antes de sair do H8 e ter uma vida fora do ITA. Em outros casos, as pessoas querem apenas se desfazer de produtos de forma rápida e eficiente para poder ter outros.
 
-In the project directory, you can run:
+A forma atual de se desfazer disso é usando grupos de WhatsApp e do grupo dos alunos do ITA no Facebook, no qual são feitas postagens de produtos e descrição. Contudo, há vários problemas na venda.
 
-### `npm start`
+Uma maneira de solucionar o problema seria esse projeto, que é uma plataforma para que alunos do ITA possam comprar e vender produtos em um único lugar sem a preocupação de ter que buscar em um post antigo do Facebook ou Whatsapp e ter facilidade de contato tanto para quem vende quanto para quem compra.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Arquitetura
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A arquitetura do projeto é baseada no modelo da imagem abaixo. Esse modelo considera as distribuições de um projeto react completo e com as tecnologias integradas a ferramenta mais atualizadas possíveis. O design foi baseado na recomendação do [Post do Medium](https://medium.com/geekculture/react-js-architecture-features-folder-structure-design-pattern-70b7b9103f22).
 
-### `npm test`
+![](img/arquitetura.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação do Projeto
 
-### `npm run build`
+Antes de iniciar o projeto é importante executar o commando de instalaçao dos pacotes:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm i
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para executar o projeto, basta executar o script:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm start
+```
 
-### `npm run eject`
+O projeto será executado no modo de desenvolvimento. Para visualização, basta no link [http://localhost:3000](http://localhost:3000) com um browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Testes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Os testes podem ser executados usando o comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Não foi realizado testes unitários para as páginas, mas para componentes que não dependiam do react. Informações sobre apadronização dos testes está contido na documentação [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
